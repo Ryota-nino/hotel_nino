@@ -126,7 +126,7 @@ if (isset($_SESSION['user_id'])) {
                                 <!-- <h4 class="title"><a href="">reserve</a></h4> -->
                                 <p class="description">Enter reserve information.</p>
                                 <div class="container w-75 text-left">
-                                    <form action="../action/userAction.php" method="post">
+                                    <form action="../views/confirm.php" method="get">
                                         <div class="form-row">
                                             <div class="form-group col-lg-6">
                                                 <label for="check_in">Check in (15:00~):</label>
@@ -142,11 +142,11 @@ if (isset($_SESSION['user_id'])) {
                                                 <label for="room_type">Room Type:</label>
                                                 <select name="room_type" id="room_type" class="form-control form-control-lg" required="required">
                                                     <option hidden>Choose a Room Type:</option>
-                                                    <option value="standard_queen_room">Standard Queen Room</option>
-                                                    <option value="standard_jack_room">Standard Jack Room</option>
-                                                    <option value="superior_ace_room">Superior Ace Room</option>
-                                                    <option value="joker_parks_uite">Joker Park Suite</option>
-                                                    <option value="king_room_villa">King Room Villa (Ocean Front)</option>
+                                                    <option value="Standard Queen Room">Standard Queen Room</option>
+                                                    <option value="Standard Jack Room">Standard Jack Room</option>
+                                                    <option value="Superior Ace Room">Superior Ace Room</option>
+                                                    <option value="Joker Park Suite">Joker Park Suite</option>
+                                                    <option value="King Room Villa">King Room Villa (Ocean Front)</option>
                                                 </select>
                                             </div>
                                             <div class="form-group col-lg-2">

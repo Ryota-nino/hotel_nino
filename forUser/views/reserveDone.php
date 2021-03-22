@@ -8,7 +8,7 @@ session_start();
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>About - Moderna Bootstrap Template</title>
+    <title>Services - Moderna Bootstrap Template</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -56,13 +56,13 @@ session_start();
                     <li><a href="index.php">Home</a></li>
                     <li><a href="about.php">About Us</a></li>
                     <li><a href="services.php">Services</a></li>
-                    <li class="active"><a href="rooms.php">Rooms</a></li>
+                    <li><a href="rooms.php">Rooms</a></li>
                     <li><a href="portfolio.php">Photos</a></li>
                     <li><a href="team.php">Team</a></li>
                     <li><a href="blog.php">Blog</a></li>
                     <li><a href="reserve.php">Reserve</a></li>
                     <li><a href="contact.php">Contact Us</a></li>
-                    <li>
+                    <li class="active">
                         <?php
                         if (isset($_SESSION['user_id'])) {
                         ?>
@@ -96,100 +96,49 @@ session_start();
 
     <main id="main">
 
-        <!-- ======= Features Section ======= -->
-        <section class="features">
+        <!-- ======= Our Services Section ======= -->
+        <section class="breadcrumbs">
             <div class="container">
 
-                <div class="section-title">
-                    <h2>Rooms</h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <h2>Login</h2>
+                    <ol>
+                        <li><a href="index.php">Home</a></li>
+                        <li>Login</li>
+                    </ol>
                 </div>
 
-                <div class="row" data-aos="fade-up">
-                    <div class="col-md-5">
-                        <img src="../assets/img/rooms-1.jpg" class="img-fluid" alt="">
-                    </div>
-                    <div class="col-md-7 pt-4">
-                        <h3>Standard Queen Room</h3>
-                        <p class="font-italic">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                            magna aliqua.
-                        </p>
-                        <ul>
-                            <li><i class="icofont-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                            <li><i class="icofont-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                        </ul>
-                    </div>
-                </div>
+            </div>
+        </section><!-- End Our Services Section -->
 
-                <div class="row" data-aos="fade-up">
-                    <div class="col-md-5 order-1 order-md-2">
-                        <img src="../assets/img/rooms-2.jpg" class="img-fluid" alt="">
-                    </div>
-                    <div class="col-md-7 pt-5 order-2 order-md-1">
-                        <h3>Standard Jack Room</h3>
-                        <p class="font-italic">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                            magna aliqua.
-                        </p>
-                        <p>
-                            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                            culpa qui officia deserunt mollit anim id est laborum
-                        </p>
-                    </div>
-                </div>
+        <!-- ======= Login Section ======= -->
+        <section class="login">
+            <div class="container">
 
-                <div class="row" data-aos="fade-up">
-                    <div class="col-md-5">
-                        <img src="../assets/img/rooms-3.jpg" class="img-fluid" alt="">
-                    </div>
-                    <div class="col-md-7 pt-5">
-                        <h3>Superior Ace Room</h3>
-                        <p>Cupiditate placeat cupiditate placeat est ipsam culpa. Delectus quia minima quod. Sunt saepe odit aut quia voluptatem hic voluptas dolor doloremque.</p>
-                        <ul>
-                            <li><i class="icofont-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                            <li><i class="icofont-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                            <li><i class="icofont-check"></i> Facilis ut et voluptatem aperiam. Autem soluta ad fugiat.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="row" data-aos="fade-up">
-                    <div class="col-md-5 order-1 order-md-2">
-                        <img src="../assets/img/rooms-4.jpg" class="img-fluid" alt="" height="300" width="100%">
-                    </div>
-                    <div class="col-md-7 pt-5 order-2 order-md-1">
-                        <h3>Joker Park Suite</h3>
-                        <p class="font-italic">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                            magna aliqua.
-                        </p>
-                        <p>
-                            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                            culpa qui officia deserunt mollit anim id est laborum
-                        </p>
-                    </div>
-                </div>
-
-                <div class="row" data-aos="fade-up">
-                    <div class="col-md-5">
-                        <img src="../assets/img/rooms-5.jpg" class="img-fluid" alt="">
-                    </div>
-                    <div class="col-md-7 pt-5">
-                        <h3>King Room Villa (Ocean Front)</h3>
-                        <p>Cupiditate placeat cupiditate placeat est ipsam culpa. Delectus quia minima quod. Sunt saepe odit aut quia voluptatem hic voluptas dolor doloremque.</p>
-                        <ul>
-                            <li><i class="icofont-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                            <li><i class="icofont-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                            <li><i class="icofont-check"></i> Facilis ut et voluptatem aperiam. Autem soluta ad fugiat.</li>
-                        </ul>
+                <div class="row align-items-center">
+                    <div class="col-md-10 mx-auto" data-aos="fade-up">
+                        <div class="icon-box icon-box-color">
+                            <div class="icon">
+                                <i class="bx bx-like"></i>
+                            </div>
+                            <!-- <h4 class="title"><a href="">login</a></h4> -->
+                            <p class="description">Completed your reservation.</p>
+                            <div class="container w-50">
+                                <div class="form-row">
+                                    <div class="form-group col-lg-6">
+                                        <input type="button" onclick="location.href='index.php'" value="BAKE TO HOME" class="btn btn-darkcyan form-control">
+                                    </div>
+                                    <div class="form-group col-lg-6">
+                                        <input type="button" onclick="location.href='reserve.php'" value="CONTINUE RESERVE" class="btn btn-darkcyan form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
             </div>
-        </section><!-- End Features Section -->
+        </section><!-- End Login Section -->
 
     </main><!-- End #main -->
 

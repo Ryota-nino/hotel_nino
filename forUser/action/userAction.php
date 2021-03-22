@@ -18,18 +18,14 @@ if (isset($_POST['signup'])) {
         $_POST['email'],
         $_POST['password'],
     );
-} else if (isset($_POST['calculate'])) {
-    $user->calculate(
-        $_POST['check_in'],
-        $_POST['check_out'],
-        $_POST['room_type'],
-        $_POST['number_of_people'],
-    );
 } else if (isset($_POST['reserve'])) {
     $user->reserve(
+        $_SESSION['user_id'],
         $_POST['check_in'],
         $_POST['check_out'],
         $_POST['room_type'],
         $_POST['number_of_people'],
+        $_POST['total'],
+        $_SERVER['HTTP_REFERER'],
     );
 }

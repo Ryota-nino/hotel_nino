@@ -13,7 +13,7 @@ class User extends Database
         if ($result == false) {
             die('CANNOT ADD USER: ' . $this->conn->error);
         } else {
-            header("Location: ../views/login.html");
+            header("Location: ../views/login.php");
         }
     }
 
@@ -41,28 +41,45 @@ class User extends Database
         }
     }
 
-    public function calculate($check_in, $check_out, $room_type, $number_of_people)
+    public function reserve($user_id, $check_in, $check_out, $room_type, $number_of_people, $total, $uri)
     {
-        // 宿泊日数の計算
-        $check_in = new DateTime($check_in);
-        $check_out = new DateTime($check_out);
-        if ($check_in < $check_out) {
-            $date = $check_out->diff($check_in)->format('%a');
+        $sql = "SELECT * FROM rooms
+                WHERE room_type = '$room_type'
+                AND status = '1'";
+
+        $result = $this->conn->query($sql);
+
+        if ($result->num_rows == 0) {
+            //予約の空きなし
         } else {
+            $room = $result->fetch_assoc();
+            var_dump($room['capacity']);
+            if ($room['capacity'] < $number_of_people) {
+                $error[] = "over capacity";
+            }
+            if ($check_in > $check_out) {
+                $error[] = "enter correct date";
+            }
+            if (isset($error)) {
+                return $error;
+                // header("Location: ../views/login.php");
+            }
+            $room_id = $room['room_id'];
         }
 
-        $sql = "SELECT room_charge FROM rooms
-                WHERE room_type = '$room_type'";
+        $sql = "INSERT INTO reservations(user_id,room_id,check_in,check_out,number_of_people,total,status)
+                VALUES ('$user_id','$room_id','$check_in','$check_out','$number_of_people','$total','1')";
 
-        $row = $this->conn->query($sql)->fetch_assoc();
-        $room_charge = $row['room_charge'];
+        $result = $this->conn->query($sql);
 
-        $total = $room_charge * $date * $number_of_people;
+        $sql = "UPDATE rooms SET status = 0
+                WHERE room_id = '$room_id'";
+        $this->conn->query($sql);
 
-        header("Location: ../views/confirm.php");
-    }
-
-    public function reserve()
-    {
+        if ($result == false) {
+            die('CANNOT RESERVE: ' . $this->conn->error);
+        } else {
+            header("Location: ../views/reserveDone.php");
+        }
     }
 }

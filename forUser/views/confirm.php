@@ -1,5 +1,16 @@
 <?php
+require_once "../class/Rooms.php";
+$room = new Room();
 session_start();
+
+$room_type = $_GET['room_type'];
+
+$room_details = $room->getRoomDetails($room_type);
+
+$date = $room->calculateDate($_GET['check_in'], $_GET['check_out']);
+
+$total = $room_details['room_charge'] * $date * $_GET['number_of_people'];
+
 
 if (isset($_SESSION['user_id'])) {
 ?>
@@ -117,7 +128,6 @@ if (isset($_SESSION['user_id'])) {
             <!-- ======= reserve Section ======= -->
             <section class="reserve">
                 <div class="container">
-
                     <div class="row">
                         <div class="col-md-10 mx-auto" data-aos="fade-up">
                             <div class="icon-box icon-box-color">
@@ -130,29 +140,29 @@ if (isset($_SESSION['user_id'])) {
                                     <form action="../action/userAction.php" method="post">
                                         <div class="form-row">
                                             <div class="input-group mb-3">
-                                                <span class="input-group-text" id="basic-addon1">Check in (15:00~):</span>
-                                                <input type="text" class="form-control" aria-label="check_in" aria-describedby="basic-addon1" readonly>
+                                                <span class="input-group-text col-sm-3" id="basic-addon1">Check in(15:00~):</span>
+                                                <input type="text" class="form-control" aria-label="check_in" value="<?php echo $_GET['check_in']; ?>" name="check_in" aria-describedby="basic-addon1" readonly>
                                             </div>
                                             <div class="input-group mb-3">
-                                                <span class="input-group-text" id="basic-addon1">Check out (~10:00):</span>
-                                                <input type="text" class="form-control" aria-label="check_out" aria-describedby="basic-addon1" readonly>
+                                                <span class="input-group-text col-sm-3" id="basic-addon1">Check out(~10:00):</span>
+                                                <input type="text" class="form-control" aria-label="check_out" value="<?php echo $_GET['check_out']; ?>" name="check_out" aria-describedby="basic-addon1" readonly>
                                             </div>
                                             <div class="input-group mb-3">
-                                                <span class="input-group-text" id="basic-addon1">Room Type:</span>
-                                                <input type="text" class="form-control" aria-label="room_type" aria-describedby="basic-addon1" readonly>
+                                                <span class="input-group-text col-sm-3" id="basic-addon1">Room Type:</span>
+                                                <input type="text" class="form-control" aria-label="room_type" value="<?php echo $_GET['room_type']; ?>" name="room_type" aria-describedby="basic-addon1" readonly>
                                             </div>
                                             <div class="input-group mb-3">
-                                                <span class="input-group-text" id="basic-addon1">People:</span>
-                                                <input type="text" class="form-control" aria-label="number_of_people" aria-describedby="basic-addon1" readonly>
+                                                <span class="input-group-text col-sm-3" id="basic-addon1">People:</span>
+                                                <input type="text" class="form-control" aria-label="number_of_people" value="<?php echo $_GET['number_of_people']; ?>" name="number_of_people" aria-describedby="basic-addon1" readonly>
                                             </div>
                                             <div class="input-group mb-3">
-                                                <span class="input-group-text" id="basic-addon1">Total:</span>
-                                                <input type="text" class="form-control" aria-label="check_out" aria-describedby="basic-addon1" readonly>
+                                                <span class="input-group-text col-sm-3" id="basic-addon1">Total:</span>
+                                                <input type="text" class="form-control" value="<?php echo $total . "$"; ?>" name="total" aria-label="total" aria-describedby="basic-addon1" readonly>
                                             </div>
                                         </div>
                                         <div class="form-row w-75 mx-auto">
                                             <div class="form-group col-lg-6">
-                                                <input type="submit" value="CANCEL" name="cancel" class="btn btn-darkcyan form-control">
+                                                <input type="button" onclick="history.back()" value="CANCEL" class="btn btn-darkcyan form-control">
                                             </div>
                                             <div class="form-group col-lg-6">
                                                 <input type="submit" value="RESERVE" name="reserve" class="btn btn-darkcyan form-control">
