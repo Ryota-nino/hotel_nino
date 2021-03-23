@@ -112,7 +112,7 @@ session_start();
               ?>
             </span>
           </h2>
-          <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+          <p class="animate__animated animate__fadeInUp">Welcome to Nino. This hotel can make you feel good. This website is going to provide information for you about own hotel room, activity, and team members. also, you can reserve here. Have a goot time.</p>
           <a href="" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>
         </div>
       </div>
@@ -120,8 +120,8 @@ session_start();
       <!-- Slide 2 -->
       <div class="carousel-item">
         <div class="carousel-container">
-          <h2 class="animate__animated animate__fadeInDown">Lorem Ipsum Dolor</h2>
-          <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+          <h2 class="animate__animated animate__fadeInDown">Proviide information</h2>
+          <p class="animate__animated animate__fadeInUp">Welcome to Nino. This hotel can make you feel good. This website is going to provide information for you about own hotel room, activity, and team members. also, you can reserve here. Have a goot time.</p>
           <a href="" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>
         </div>
       </div>
@@ -129,8 +129,8 @@ session_start();
       <!-- Slide 3 -->
       <div class="carousel-item">
         <div class="carousel-container">
-          <h2 class="animate__animated animate__fadeInDown">Sequi ea ut et est quaerat</h2>
-          <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+          <h2 class="animate__animated animate__fadeInDown">You can reserve here!</h2>
+          <p class="animate__animated animate__fadeInUp">Welcome to Nino. This hotel can make you feel good. This website is going to provide information for you about own hotel room, activity, and team members. also, you can reserve here. Have a goot time.</p>
           <a href="" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>
         </div>
       </div>
@@ -157,33 +157,33 @@ session_start();
         <div class="row">
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up">
             <div class="icon-box icon-box-pink">
-              <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+              <div class="icon"><i class="bx bx-donate-heart"></i></div>
+              <h4 class="title"><a href=""></a>Hospitality</h4>
+              <p class="description">We think the customer is the most important and privide most hospitality in the world for you. Please expect right?</p>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
             <div class="icon-box icon-box-cyan">
               <div class="icon"><i class="bx bx-file"></i></div>
-              <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+              <h4 class="title"><a href="">By appointment only</a></h4>
+              <p class="description">We operate by reservation only to provide the best service. Please reserve early on this website. </p>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
             <div class="icon-box icon-box-green">
-              <div class="icon"><i class="bx bx-tachometer"></i></div>
-              <h4 class="title"><a href="">Magni Dolores</a></h4>
-              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+              <div class="icon"><i class="bx bx-rocket"></i></div>
+              <h4 class="title"><a href="">Unrealistic space</a></h4>
+              <p class="description">We privide you a unrealistic space. You won't be able to forget time spend at hotel and you will want to come again.</p>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
             <div class="icon-box icon-box-blue">
               <div class="icon"><i class="bx bx-world"></i></div>
-              <h4 class="title"><a href="">Nemo Enim</a></h4>
-              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+              <h4 class="title"><a href="">World Famous</a></h4>
+              <p class="description">Many foreingers visit this hotel. No.1 of "Most want to visit hotel ranking".this is our ability.</p>
             </div>
           </div>
 
@@ -206,14 +206,14 @@ session_start();
 
             <div class="icon-box">
               <div class="icon"><i class="bx bx-fingerprint"></i></div>
-              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+              <h4 class="title"><a href="">Full Security</a></h4>
+              <p class="description">Security measures are perfect so that our customers can spend their time safely and comfortably.</p>
             </div>
 
             <div class="icon-box">
               <div class="icon"><i class="bx bx-gift"></i></div>
-              <h4 class="title"><a href="">Nemo Enim</a></h4>
-              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+              <h4 class="title"><a href="">Unforgettable memories</a></h4>
+              <p class="description">We want to privide perfect services. So we are going to make you happy.</p>
             </div>
 
           </div>
