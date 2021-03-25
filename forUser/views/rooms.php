@@ -79,7 +79,7 @@ session_start();
                         <?php
                         if (isset($_SESSION['user_id'])) {
                         ?>
-                            <a href="#"> <?php echo "Account"; ?> </a>
+                            <a href="account.php"> <?php echo "Account"; ?> </a>
                         <?php
                         } else {
                         ?>
@@ -102,7 +102,7 @@ session_start();
 
                 <div class="section-title">
                     <h2>Rooms</h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                    <p>We offer a wide variety of rooms to suit your mood. Please find a room that suits you. If you don't like the color of the sheets in the room, you can change it.</p>
                 </div>
 
                 <div class="row" data-aos="fade-up">
@@ -112,12 +112,11 @@ session_start();
                     <div class="col-md-7 pt-4">
                         <h3>Standard Queen Room</h3>
                         <p class="font-italic">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                            magna aliqua.
+                            The room is based on white. You will be able to have a relaxing morning. If you don't like white, you can change the color only if you contact us in advance.
                         </p>
                         <ul>
-                            <li><i class="icofont-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                            <li><i class="icofont-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                            <li><i class="icofont-check"></i> We have taken advanced security measures.</li>
+                            <li><i class="icofont-check"></i> The room is completely sterilized with alcohol.</li>
                         </ul>
                     </div>
                 </div>
@@ -129,14 +128,12 @@ session_start();
                     <div class="col-md-7 pt-5 order-2 order-md-1">
                         <h3>Standard Jack Room</h3>
                         <p class="font-italic">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                            magna aliqua.
+                            The structure of the room is reminiscent of a tropical country. Makes you feel like you are in a different world.
                         </p>
-                        <p>
-                            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                            culpa qui officia deserunt mollit anim id est laborum
-                        </p>
+                        <ul>
+                            <li><i class="icofont-check"></i> We have taken advanced security measures.</li>
+                            <li><i class="icofont-check"></i> The room is completely sterilized with alcohol.</li>
+                        </ul>
                     </div>
                 </div>
 
@@ -146,11 +143,11 @@ session_start();
                     </div>
                     <div class="col-md-7 pt-5">
                         <h3>Superior Ace Room</h3>
-                        <p>Cupiditate placeat cupiditate placeat est ipsam culpa. Delectus quia minima quod. Sunt saepe odit aut quia voluptatem hic voluptas dolor doloremque.</p>
+                        <p>It is a luxurious room with a pool in the room. It is a luxurious room with a pool in the room. No matter how much you swim, it's your pool.</p>
                         <ul>
-                            <li><i class="icofont-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                            <li><i class="icofont-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                            <li><i class="icofont-check"></i> Facilis ut et voluptatem aperiam. Autem soluta ad fugiat.</li>
+                            <li><i class="icofont-check"></i> We have taken advanced security measures.</li>
+                            <li><i class="icofont-check"></i> The room is completely sterilized with alcohol.</li>
+                            <li><i class="icofont-check"></i> I try to keep insects out.</li>
                         </ul>
                     </div>
                 </div>
@@ -162,14 +159,13 @@ session_start();
                     <div class="col-md-7 pt-5 order-2 order-md-1">
                         <h3>Joker Park Suite</h3>
                         <p class="font-italic">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                            magna aliqua.
+                            This room has a garden with a pool. It is a luxurious room with a pool in the room. No matter how much you swim, it's your pool.
                         </p>
-                        <p>
-                            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                            culpa qui officia deserunt mollit anim id est laborum
-                        </p>
+                        <ul>
+                            <li><i class="icofont-check"></i> We have taken advanced security measures.</li>
+                            <li><i class="icofont-check"></i> The room is completely sterilized with alcohol.</li>
+                            <li><i class="icofont-check"></i> I try to keep insects out.</li>
+                        </ul>
                     </div>
                 </div>
 
@@ -179,11 +175,11 @@ session_start();
                     </div>
                     <div class="col-md-7 pt-5">
                         <h3>King Room Villa (Ocean Front)</h3>
-                        <p>Cupiditate placeat cupiditate placeat est ipsam culpa. Delectus quia minima quod. Sunt saepe odit aut quia voluptatem hic voluptas dolor doloremque.</p>
+                        <p>It is a large room that can be stopped by up to 10 people. It makes you feel as if you were a king. You can scuba dive from the room. This is the room we recommend most.</p>
                         <ul>
-                            <li><i class="icofont-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                            <li><i class="icofont-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                            <li><i class="icofont-check"></i> Facilis ut et voluptatem aperiam. Autem soluta ad fugiat.</li>
+                            <li><i class="icofont-check"></i> We have taken advanced security measures.</li>
+                            <li><i class="icofont-check"></i> The room is completely sterilized with alcohol.</li>
+                            <li><i class="icofont-check"></i> I try to keep insects out.</li>
                         </ul>
                     </div>
                 </div>

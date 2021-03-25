@@ -79,7 +79,7 @@ session_start();
             <?php
             if (isset($_SESSION['user_id'])) {
             ?>
-              <a href="#"> <?php echo "Account"; ?> </a>
+              <a href="account.php"> <?php echo "Account"; ?> </a>
             <?php
             } else {
             ?>
@@ -127,8 +127,7 @@ session_start();
               </div>
 
               <h2 class="entry-title">
-                <a href="blog-single.php">Dolorum optio tempore voluptas dignissimos cumque fuga qui quibusdam quia
-                  reiciendis</a>
+                <a href="blog-single.php">Red Carpet Lands at Hotel Nino!! What will happen?</a>
               </h2>
 
               <div class="entry-meta">
@@ -143,10 +142,7 @@ session_start();
 
               <div class="entry-content">
                 <p>
-                  Similique neque nam consequuntur ad non maxime aliquam quas. Quibusdam animi praesentium. Aliquam et
-                  laboriosam eius aut nostrum quidem aliquid dicta.
-                  Et eveniet enim. Qui velit est ea dolorem doloremque deleniti aperiam unde soluta. Est cum et quod quos
-                  aut ut et sit sunt. Voluptate porro consequatur assumenda perferendis dolore.
+                  The red carpet has landed at our hotel. This is a situation that hotel owners always dream of. They said they would like to receive the services of this hotel. It seems that we can still grow. I will work hard at hotel management in this condition.
                 </p>
                 <div class="read-more">
                   <a href="blog-single.php">Read More</a>
@@ -162,7 +158,7 @@ session_start();
               </div>
 
               <h2 class="entry-title">
-                <a href="blog-single.php">Nisi magni odit consequatur autem nulla dolorem</a>
+                <a href="blog-single.php">Popular artist "Caramel Strike" holds a one-man live at Hotel Nino!</a>
               </h2>
 
               <div class="entry-meta">
@@ -177,11 +173,7 @@ session_start();
 
               <div class="entry-content">
                 <p>
-                  Incidunt voluptate sit temporibus aperiam. Quia vitae aut sint ullam quis illum voluptatum et. Quo
-                  libero rerum voluptatem pariatur nam.
-                  Ad impedit qui officiis est in non aliquid veniam laborum. Id ipsum qui aut. Sit aliquam et quia
-                  molestias laboriosam. Tempora nam odit omnis eum corrupti qui aliquid excepturi molestiae. Facilis et
-                  sint quos sed voluptas. Maxime sed tempore enim omnis non alias odio quos distinctio.
+                  One day Caramel Strike told us, "I want to live, so prepare the best environment." Of course, the answer was "OK" When the live was over, we were very happy to hear "It was great. Thank you".
                 </p>
                 <div class="read-more">
                   <a href="blog-single.php">Read More</a>
@@ -197,8 +189,7 @@ session_start();
               </div>
 
               <h2 class="entry-title">
-                <a href="blog-single.php">Possimus soluta ut id suscipit ea ut. In quo quia et soluta libero sit
-                  sint.</a>
+                <a href="blog-single.php">Sexy girls sell tropical juices for a limited time💓</a>
               </h2>
 
               <div class="entry-meta">
@@ -213,9 +204,7 @@ session_start();
 
               <div class="entry-content">
                 <p>
-                  Aut iste neque ut illum qui perspiciatis similique recusandae non. Fugit autem dolorem labore omnis et.
-                  Eum temporibus fugiat voluptate enim tenetur sunt omnis.
-                  Doloremque est saepe laborum aut. Ipsa cupiditate ex harum at recusandae nesciunt. Ut dolores velit.
+                  This summer, we will be selling tropical juice developed by the chef of Hotel Nino for a limited time. We drank it too and it's very delicious. Please drink a juice that you have never tasted before. You won't regret it!
                 </p>
                 <div class="read-more">
                   <a href="blog-single.php">Read More</a>
@@ -231,8 +220,7 @@ session_start();
               </div>
 
               <h2 class="entry-title">
-                <a href="blog-single.php">Non rem rerum nam cum quo minus. Dolor distinctio deleniti explicabo eius
-                  exercitationem. Veniam eius velit ab ipsa quidem rem.</a>
+                <a href="blog-single.php">Once a year we review our services.</a>
               </h2>
 
               <div class="entry-meta">
@@ -247,11 +235,7 @@ session_start();
 
               <div class="entry-content">
                 <p>
-                  Aspernatur rerum perferendis et sint. Voluptates cupiditate voluptas atque quae. Rem veritatis rerum
-                  enim et autem. Saepe atque cum eligendi eaque iste omnis a qui.
-                  Quia sed sunt. Ea asperiores expedita et et delectus voluptates rerum. Id saepe ut itaque quod qui
-                  voluptas nobis porro rerum. Quam quia nesciunt qui aut est non omnis. Inventore occaecati et quaerat
-                  magni itaque nam voluptas. Voluptatem ducimus sint id earum ut nesciunt sed corrupti nemo.
+                  We are always looking up. We are confident in our service, but we never overconfide. We are doing our best to keep up with the ever-changing emotions of our customers. This time, we talked about having a little more playfulness. We look forward to working with you in the future.
                 </p>
                 <div class="read-more">
                   <a href="blog-single.php">Read More</a>

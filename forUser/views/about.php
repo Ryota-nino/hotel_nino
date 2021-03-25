@@ -79,7 +79,7 @@ session_start();
             <?php
             if (isset($_SESSION['user_id'])) {
             ?>
-              <a href="#"> <?php echo "Account"; ?> </a>
+              <a href="account.php"> <?php echo "Account"; ?> </a>
             <?php
             } else {
             ?>
@@ -120,20 +120,17 @@ session_start();
             <img src="../assets/img/about.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0">
-            <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+            <h3>All services come from kindness.</h3>
             <p class="font-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
+              We think that if people doesn't have kindness, there is no reason to build the hotel. so we are going to continue the high quality services.
             </p>
             <ul>
-              <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              <li><i class="icofont-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-              <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+              <li><i class="icofont-check-circled"></i> We have a high quality services.</li>
+              <li><i class="icofont-check-circled"></i> If you lose something, you will definitely find it.</li>
+              <li><i class="icofont-check-circled"></i> If you want to celebrate your loved one, we will do our best to support you. Please tell us by phone</li>
             </ul>
             <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum
+              I will do my best to our customers. So you will naturally like us. Our watchword is "Cannot provide good service to people without a smile." A trusted clerk always thinks about the customer. We will satisfy you with everything we can do.
             </p>
           </div>
         </div>
@@ -148,12 +145,12 @@ session_start();
         <div class="row counters">
 
           <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">232</span>
-            <p>Clients</p>
+            <span data-toggle="counter-up">3</span>
+            <p>Stars</p>
           </div>
 
           <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">521</span>
+            <span data-toggle="counter-up">109</span>
             <p>Projects</p>
           </div>
 
@@ -177,7 +174,7 @@ session_start();
       <div class="container">
 
         <div class="section-title">
-          <h2>Our Skills</h2>
+          <h2>Our Informations</h2>
           <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
 
@@ -185,25 +182,25 @@ session_start();
 
           <div class="progress">
             <div class="progress-bar bg-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-              <span class="skill">HTML <i class="val">100%</i></span>
+              <span class="skill">Friendships <i class="val">100%</i></span>
             </div>
           </div>
 
           <div class="progress">
             <div class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-              <span class="skill">CSS <i class="val">90%</i></span>
+              <span class="skill">Delicious food <i class="val">90%</i></span>
             </div>
           </div>
 
           <div class="progress">
             <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-              <span class="skill">JavaScript <i class="val">75%</i></span>
+              <span class="skill">Event <i class="val">75%</i></span>
             </div>
           </div>
 
           <div class="progress">
-            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
-              <span class="skill">Photoshop <i class="val">55%</i></span>
+            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="79" aria-valuemin="0" aria-valuemax="100">
+              <span class="skill">Monry <i class="val">79%</i></span>
             </div>
           </div>
 
@@ -218,7 +215,7 @@ session_start();
 
         <div class="section-title">
           <h2>Tetstimonials</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <p>Our service has attracted many customers. We will show you the voice of the customer as proof.</p>
         </div>
 
         <div class="owl-carousel testimonials-carousel">
@@ -229,7 +226,7 @@ session_start();
             <h4>Ceo &amp; Founder</h4>
             <p>
               <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+              How was it? Did you want to visit our hotel at least once? Please come by all means. We are always waiting for you.
               <i class="bx bxs-quote-alt-right quote-icon-right"></i>
             </p>
           </div>
@@ -240,7 +237,7 @@ session_start();
             <h4>Designer</h4>
             <p>
               <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+              Everything was perfect. I will definitely come on vacation next year. Next is scuba diving. I'm looking forward to it.
               <i class="bx bxs-quote-alt-right quote-icon-right"></i>
             </p>
           </div>
@@ -251,7 +248,7 @@ session_start();
             <h4>Store Owner</h4>
             <p>
               <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+              I had a day off from work, so I made a reservation in advance and visited. The service and food were more than five times as good as I expected and it was wonderful.
               <i class="bx bxs-quote-alt-right quote-icon-right"></i>
             </p>
           </div>
@@ -262,7 +259,7 @@ session_start();
             <h4>Freelancer</h4>
             <p>
               <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+              I'm a cook, so I'm going to talk about cooking. First of all, Clark's food was the best. I also want to be able to cook dishes that can make such people happy.
               <i class="bx bxs-quote-alt-right quote-icon-right"></i>
             </p>
           </div>
@@ -273,7 +270,7 @@ session_start();
             <h4>Entrepreneur</h4>
             <p>
               <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+              My hobby is traveling and I stopped at various hotels, but this is the first time for me to have such a wonderful hotel. I will come 200 more times.
               <i class="bx bxs-quote-alt-right quote-icon-right"></i>
             </p>
           </div>

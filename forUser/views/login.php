@@ -79,7 +79,7 @@ session_start();
             <?php
             if (isset($_SESSION['user_id'])) {
             ?>
-              <a href="#"> <?php echo "Account"; ?> </a>
+              <a href="account.php"> <?php echo "Account"; ?> </a>
             <?php
             } else {
             ?>

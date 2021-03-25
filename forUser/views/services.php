@@ -79,7 +79,7 @@ session_start();
             <?php
             if (isset($_SESSION['user_id'])) {
             ?>
-              <a href="#"> <?php echo "Account"; ?> </a>
+              <a href="account.php"> <?php echo "Account"; ?> </a>
             <?php
             } else {
             ?>
@@ -243,7 +243,7 @@ session_start();
     </section><!-- End Service Details Section -->
 
     <!-- ======= Pricing Section ======= -->
-    <section class="pricing section-bg" data-aos="fade-up">
+    <!-- <section class="pricing section-bg" data-aos="fade-up">
       <div class="container">
 
         <div class="section-title">
@@ -295,7 +295,7 @@ session_start();
         </div>
 
       </div>
-    </section><!-- End Pricing Section -->
+    </section>End Pricing Section -->
 
   </main><!-- End #main -->
 
