@@ -123,7 +123,7 @@ session_start();
               <!-- <h4 class="title"><a href="">login</a></h4> -->
               <p class="description">Enter your account information.</p>
               <div class="container w-75">
-                <form action="./action/userAction.php" method="post">
+                <form action="../action/userAction.php" method="post">
                   <div class="form-row">
                     <div class="form-group col-lg-6">
                       <input type="text" name="first_name" class="form-control p-4" placeholder="First Name">
@@ -152,7 +152,7 @@ session_start();
                   </div>
                   <div class="form-row">
                     <div class="form-group col-lg-6 mx-auto">
-                      <input type="submit" value="LOGIN" name="signup" class="btn btn-darkcyan form-control">
+                      <input type="submit" value="SIGN UP" name="signup" class="btn btn-darkcyan form-control">
                     </div>
                   </div>
                 </form>
@@ -176,7 +176,7 @@ session_start();
         <div class="row">
           <div class="col-lg-6">
             <h4>Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <p>Can you search our newsletter?</p>
           </div>
           <div class="col-lg-6">
             <form action="" method="post">
@@ -227,7 +227,6 @@ session_start();
 
           <div class="col-lg-3 col-md-6 footer-info">
             <h3>About Moderna</h3>
-            <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
             <div class="social-links mt-3">
               <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
               <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>

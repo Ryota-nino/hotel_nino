@@ -1,16 +1,10 @@
 <?php
-require_once "../class/Rooms.php";
-$room = new Room();
+require_once "../class/Users.php";
+$user = new User();
 session_start();
 
-$room_type = $_GET['room_type'];
-
-$room_details = $room->getRoomDetails($room_type);
-
-$date = $room->calculateDate($_GET['check_in'], $_GET['check_out']);
-
-$total = $room_details['room_charge'] * $date * $_GET['number_of_people'];
-
+$userInfo = $user->getUser($_SESSION['user_id']);
+$reservationInfo = $user->getReservations($_SESSION['user_id']);
 
 if (isset($_SESSION['user_id'])) {
 ?>
@@ -73,7 +67,7 @@ if (isset($_SESSION['user_id'])) {
                         <li><a href="portfolio.php">Photos</a></li>
                         <li><a href="team.php">Team</a></li>
                         <li><a href="blog.php">Blog</a></li>
-                        <li class="active"><a href="reserve.php">Reserve</a></li>
+                        <li><a href="reserve.php">Reserve</a></li>
                         <li><a href="contact.php">Contact Us</a></li>
                         <li>
                             <?php
@@ -88,7 +82,7 @@ if (isset($_SESSION['user_id'])) {
                             }
                             ?>
                         </li>
-                        <li>
+                        <li class="active">
                             <?php
                             if (isset($_SESSION['user_id'])) {
                             ?>
@@ -108,22 +102,57 @@ if (isset($_SESSION['user_id'])) {
         </header><!-- End Header -->
 
         <main id="main">
-
-            <!-- ======= Our Services Section ======= -->
             <section class="breadcrumbs">
                 <div class="container">
 
                     <div class="d-flex justify-content-between align-items-center">
-                        <h2>Confirm</h2>
+                        <h2>Account</h2>
                         <ol>
                             <li><a href="index.php">Home</a></li>
-                            <li><a href="reserve.php">Reserve</a></li>
-                            <li>Confirm</li>
+                            <li>Account</li>
                         </ol>
                     </div>
 
                 </div>
-            </section><!-- End Our Services Section -->
+            </section>
+
+            <section class="contact" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="info-box">
+                                        <i class="bx bx-user"></i>
+                                        <h3>My Account</h3>
+                                        <p class="description">You can see the information about your account.</p>
+                                        <div class="container w-75 text-left">
+                                            <div class="form-row">
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text col-sm-3" id="basic-addon1">NAME:</span>
+                                                    <input type="text" class="form-control" aria-label="check_in" value="<?php echo $userInfo['first_name'] . " " . $userInfo['last_name']; ?>" name="check_in" aria-describedby="basic-addon1" readonly>
+                                                </div>
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text col-sm-3" id="basic-addon1">EMAIL:</span>
+                                                    <input type="text" class="form-control" aria-label="check_out" value="<?php echo $userInfo['email']; ?>" name="check_out" aria-describedby="basic-addon1" readonly>
+                                                </div>
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text col-sm-3" id="basic-addon1">PHONE NUMBER:</span>
+                                                    <input type="text" class="form-control" aria-label="room_type" value="<?php echo $userInfo['phone_number']; ?>" name="room_type" aria-describedby="basic-addon1" readonly>
+                                                </div>
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text col-sm-3" id="basic-addon1">CARD NUMBER:</span>
+                                                    <input type="text" class="form-control" aria-label="number_of_people" value="<?php echo "**** - **** - **** - " . substr($userInfo['card_number'], -4, 4); ?>" name="number_of_people" aria-describedby="basic-addon1" readonly>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             <!-- ======= reserve Section ======= -->
             <section class="reserve">
@@ -135,37 +164,37 @@ if (isset($_SESSION['user_id'])) {
                                     <i class="bx bx-task"></i>
                                 </div>
                                 <!-- <h4 class="title"><a href="">reserve</a></h4> -->
-                                <p class="description">Enter reserve information.</p>
+                                <p class="description">You can see the reserve information.</p>
                                 <div class="container w-75 text-left">
                                     <form action="../action/userAction.php" method="post">
                                         <div class="form-row">
                                             <div class="input-group mb-3">
                                                 <span class="input-group-text col-sm-3" id="basic-addon1">Check in(15:00~):</span>
-                                                <input type="text" class="form-control" aria-label="check_in" value="<?php echo $_GET['check_in']; ?>" name="check_in" aria-describedby="basic-addon1" readonly>
+                                                <input type="text" class="form-control" aria-label="check_in" value="<?php echo $reservationInfo['check_in']; ?>" name="check_in" aria-describedby="basic-addon1" readonly>
                                             </div>
                                             <div class="input-group mb-3">
                                                 <span class="input-group-text col-sm-3" id="basic-addon1">Check out(~10:00):</span>
-                                                <input type="text" class="form-control" aria-label="check_out" value="<?php echo $_GET['check_out']; ?>" name="check_out" aria-describedby="basic-addon1" readonly>
+                                                <input type="text" class="form-control" aria-label="check_out" value="<?php echo $reservationInfo['check_out']; ?>" name="check_out" aria-describedby="basic-addon1" readonly>
                                             </div>
                                             <div class="input-group mb-3">
                                                 <span class="input-group-text col-sm-3" id="basic-addon1">Room Type:</span>
-                                                <input type="text" class="form-control" aria-label="room_type" value="<?php echo $_GET['room_type']; ?>" name="room_type" aria-describedby="basic-addon1" readonly>
+                                                <input type="text" class="form-control" aria-label="room_type" value="<?php echo $reservationInfo['room_type']; ?>" name="room_type" aria-describedby="basic-addon1" readonly>
                                             </div>
                                             <div class="input-group mb-3">
                                                 <span class="input-group-text col-sm-3" id="basic-addon1">People:</span>
-                                                <input type="text" class="form-control" aria-label="number_of_people" value="<?php echo $_GET['number_of_people']; ?>" name="number_of_people" aria-describedby="basic-addon1" readonly>
+                                                <input type="text" class="form-control" aria-label="number_of_people" value="<?php echo $reservationInfo['number_of_people']; ?>" name="number_of_people" aria-describedby="basic-addon1" readonly>
                                             </div>
                                             <div class="input-group mb-3">
                                                 <span class="input-group-text col-sm-3" id="basic-addon1">Total:</span>
-                                                <input type="text" class="form-control" value="<?php echo $total . "$"; ?>" name="total" aria-label="total" aria-describedby="basic-addon1" readonly>
+                                                <input type="text" class="form-control" value="<?php echo $reservationInfo['total']; ?>" name="total" aria-label="total" aria-describedby="basic-addon1" readonly>
                                             </div>
                                         </div>
                                         <div class="form-row w-75 mx-auto">
                                             <div class="form-group col-lg-6">
-                                                <input type="button" onclick="history.back()" value="CANCEL" class="btn btn-darkcyan form-control">
+                                                <input type="submit" value="CANCEL" name="cancel" class="btn btn-darkcyan form-control">
                                             </div>
                                             <div class="form-group col-lg-6">
-                                                <input type="submit" value="RESERVE" name="reserve" class="btn btn-darkcyan form-control">
+                                                <input type="submit" value="CHANGE" name="change" class="btn btn-darkcyan form-control">
                                             </div>
                                         </div>
                                     </form>
@@ -187,7 +216,7 @@ if (isset($_SESSION['user_id'])) {
                     <div class="row">
                         <div class="col-lg-6">
                             <h4>Our Newsletter</h4>
-                            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                            <p>Can you search our newsletter?</p>
                         </div>
                         <div class="col-lg-6">
                             <form action="" method="post">
@@ -238,7 +267,6 @@ if (isset($_SESSION['user_id'])) {
 
                         <div class="col-lg-3 col-md-6 footer-info">
                             <h3>About Moderna</h3>
-                            <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
                             <div class="social-links mt-3">
                                 <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
                                 <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>

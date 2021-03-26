@@ -3,6 +3,36 @@ require_once "Database.php";
 
 class User extends Database
 {
+    public function getUser($user_id)
+    {
+        $sql = "SELECT * FROM users 
+                WHERE user_id = '$user_id'";
+
+        $result = $this->conn->query($sql);
+
+        if ($result == false) {
+            die('CANNOT GET USER: ' . $this->conn->error);
+        } else {
+            return $result->fetch_assoc();
+        }
+    }
+
+    public function getReservations($user_id)
+    {
+        $sql = "SELECT * FROM reservations 
+                WHERE user_id = '$user_id'";
+
+        $reservations = $this->conn->query($sql)->fetch_assoc();
+        $room_id = $reservations['room_id'];
+
+        $sql = "SELECT room_type FROM rooms
+                WHERE room_id = '$room_id'";
+
+        $room_type = $this->conn->query($sql)->fetch_assoc();
+
+        return array_merge($reservations, $room_type);
+    }
+
     public function signUp($first_name, $last_name, $email, $password, $phone_number, $card_number)
     {
         $sql = "INSERT INTO users(first_name,last_name,email,password,phone_number,card_number)
@@ -53,7 +83,6 @@ class User extends Database
             //予約の空きなし
         } else {
             $room = $result->fetch_assoc();
-            var_dump($room['capacity']);
             if ($room['capacity'] < $number_of_people) {
                 $error[] = "over capacity";
             }
